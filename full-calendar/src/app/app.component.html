@@ -1,0 +1,10 @@
+<body>
+  <div class="main  hvr-float-shadow">  
+    <app-slide #slide (sendEvent) = "receiveEvent($event)" [currentDateChild] = "currentDateParent"></app-slide>
+  </div>
+  <div class="mini-cal">
+    <div class="calender">
+      <full-calendar #calendar [options]="calendarOptions"></full-calendar>
+    </div>
+  </div>
+</body>

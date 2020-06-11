@@ -1,0 +1,17 @@
+<div class="slide">
+    <div class="date-pc">
+        <div class="dmy">{{currentDateChild | date}} </div>
+        <div class="date-down">
+            <div class="text-form">
+                    <input #title (keyup.enter)="addEvent(title.value)">
+           </div>
+           <div class="plus">
+               <a href="#"><img (click)='addEvent(title.value)' src="../../assets/plus.png" alt="" /></a>
+           </div>
+           <div class="clear"> </div>
+       </div>
+       <div class="text-mc">
+           <p>Don't put finger in light socket.</p>
+       </div>
+    </div>
+</div>
